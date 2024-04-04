@@ -14,18 +14,15 @@ Welcome to my React To-Do App! This application helps you manage your tasks effi
 ## Screenshots
 
 <div align="center">
-    <img src="./src/Assets/Screenshots/Desktop1.png" alt="Screenshot 1" width="300" height="auto">
-    <img src="./src/Assets/Screenshots/Desktop2.png" alt="Screenshot 2" width="300" height="auto">
+    <img src="./src/Assets/Screenshots/Desktop1.png" alt="Screenshot 1" width="200" height="auto">
+    <img src="./src/Assets/Screenshots/Desktop2.png" alt="Screenshot 2" width="200" height="auto">
+    <img src="./src/Assets/Screenshots/Desktop3.png" alt="Screenshot 3" width="200" height="auto">
 </div>
 
 <div align="center">
-    <img src="./src/Assets/Screenshots/Desktop3.png" alt="Screenshot 3" width="300" height="auto">
-    <img src="./src/Assets/Screenshots/mob1.png" alt="Screenshot 4" width="300" height="auto">
-</div>
-
-<div align="center">
-    <img src="./src/Assets/Screenshots/mob2.png" alt="Screenshot 5" width="300" height="auto">
-    <img src="./src/Assets/Screenshots/mob3.png" alt="Screenshot 6" width="300" height="auto">
+    <img src="./src/Assets/Screenshots/mob1.png" alt="Screenshot 4" width="200" height="auto">
+    <img src="./src/Assets/Screenshots/mob2.png" alt="Screenshot 5" width="200" height="auto">
+    <img src="./src/Assets/Screenshots/mob3.png" alt="Screenshot 6" width="200" height="auto">
 </div>
 
 ## Installation
