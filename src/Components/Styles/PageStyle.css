@@ -1,0 +1,158 @@
+.welcomeImg{
+    max-width:90%;
+    height: auto;
+}
+
+.introSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* align-content: space-evenly; */
+    justify-content: space-between;
+ 
+}
+
+.cardSection{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center; 
+  justify-content: center;
+  margin: 2% 10% 2% 10%;
+  position: relative;
+
+}
+
+.welcomeImage{
+  width: 800px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 22px;
+  }
+
+.createTask{
+  border: 1px solid;
+  width: 100px;
+  min-height: 50px;
+  max-height: 150px;
+  margin: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.createTask:hover{
+   opacity: 70%;
+}
+
+.taskButton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  margin: 2px;
+}
+
+
+.taskListBar{
+  /* background-image: linear-gradient( to right,#705ee6,#533de4); */
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  min-width: 200px;
+  max-width: 600px;
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.toDoForm{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: max-content;
+  margin: 10%;
+  padding: 10px;
+  min-width: 300px;
+  max-width: 800px;
+  /* height: 300px; */
+  border: 1px solid;
+  background-color: rgb(248, 244, 242);
+}
+
+.formSection{
+  position: absolute;
+  width: 95vw;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formTitleInput{
+  padding: 2%;
+}
+.formDescInput{
+  padding: 5%;
+}
+/* .formInputField{
+  padding: 5%;
+} */
+
+.close-icon:hover{
+ opacity: 80%;
+
+}
+
+.taskListSection{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 12px;
+  /* align-items: center; */
+  justify-content: start;
+  padding: 10px;
+  margin: 12px;
+}
+
+.mark_completed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:  25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 180px;
+  content: " ";
+}
+
+.mark_completed:hover{
+  /* opacity: 100%; */
+  background-color:  rgb(192, 51, 16);
+  color: aliceblue;
+}
+
+.markTick{
+  opacity: 0;
+}
+
+.markTick:hover{
+  opacity: 100%;
+}
+
+.taskbar_operation{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 576px) {
+    .introSection {
+      margin-top: 10%;
+    }
+    .description {
+      margin-top: 10%;
+    }
+  }
