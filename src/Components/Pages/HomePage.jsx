@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import Nav from './Nav'
-import TaskTiles from '../CustomComponents/TaskTiles'
 import cardImg1 from '../../Assets/16773c28-b83f-47a6-9d4c-b41a5b317ecf.jpg'
 import { FiPlus } from "react-icons/fi";
 import TaskList from '../CustomComponents/TaskList'
