@@ -8,28 +8,19 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* align-content: space-evenly; */
-    justify-content: space-between;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(to bottom,rgb(241, 114, 114),rgb(27, 6, 6));
+    overflow: hidden;
  
 }
 
-.cardSection{
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: center; 
-  justify-content: center;
-  margin: 2% 10% 2% 10%;
-  position: relative;
-
+.welcomeDiv{
+  max-width: 400px;
+  min-width: 120px;
 }
-
-.welcomeImage{
-  width: 800px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 22px;
-  }
 
 .createTask{
   border: 1px solid;
@@ -146,11 +137,30 @@
   justify-content: space-between;
 }
 
+.cardSection{
+  position: relative;
+  width: 95vw;
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeImg{
+  min-width: 80%;
+  height: 200px;
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  
+}
+
+
+
 
 
 @media (max-width: 576px) {
     .introSection {
-      margin-top: 10%;
+      /* margin-top: 10%; */
     }
     .description {
       margin-top: 10%;

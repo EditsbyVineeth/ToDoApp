@@ -2,8 +2,6 @@ import React,{useEffect} from 'react'
 import Nav from './Nav'
 import TaskTiles from '../CustomComponents/TaskTiles'
 import cardImg1 from '../../Assets/16773c28-b83f-47a6-9d4c-b41a5b317ecf.jpg'
-import cardImg2 from '../../Assets/3991540.jpg'
-import cardImg3 from '../../Assets/4831473.jpg'
 import { FiPlus } from "react-icons/fi";
 import TaskList from '../CustomComponents/TaskList'
 import { initTodo } from '../../StateManagement/actionTypes';
@@ -19,10 +17,10 @@ function HomePage({addClicked}) {
     <div>
         <Nav/>
 
-        <section class="row" className='cardSection'>
+        <section className='cardSection'>
           <h2 style={{ position:'absolute', color:'white'}}>Task Flow</h2>
 
-          <img src ={cardImg1} className='welcomeImage' alt='bga'/>
+          <img src ={cardImg1} className='homeImg' alt='bga'/>
 
           
         </section>

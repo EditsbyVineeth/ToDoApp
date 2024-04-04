@@ -1,13 +1,14 @@
 import { Button } from "bootstrap";
 import React from "react";
+import welcomeImg from '../../Assets/welcomeImage.png'
 
 function IntroSection({buttonClicked}) {
   return (
     <section className="introSection">
       <h1 className="">Task Flow</h1>
-      <div className="divd">
+      <div className="welcomeDiv">
         <img className="welcomeImg" 
-        src="https://img.freepik.com/free-vector/creative-welcome-team-banner-your-recruitment-process_1017-50446.jpg?size=626&ext=jpg&ga=GA1.1.521510461.1697829523&semt=sph"
+        src={welcomeImg}
          alt="welcomeImage"></img>
       </div>
       <div className="description">
