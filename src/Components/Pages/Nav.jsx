@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Import Bootstrap JavaScript bundle
+import { Link } from "react-router-dom";
 
 function Nav() {
     const [isNavbarOpen, setNavbarOpen] = useState(false);
@@ -23,7 +24,7 @@ function Nav() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">Task Flow</a>
+                <a className="navbar-brand" href="#">Task Flow</a>
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -37,18 +38,18 @@ function Nav() {
                 <div className={"collapse navbar-collapse" + (isNavbarOpen ? " show" : "")} id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="/">Home</a>
+                            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="/">About</a>
+                            <Link className="nav-link" to="/about">About</Link>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Tasks
-                            </a>
+                            </Link>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="/">All Tasks</a></li>
-                                <li><a className="dropdown-item" href="/">Completed</a></li>
+                                <li><Link className="dropdown-item" to="/">All Tasks</Link></li>
+                                <li><Link className="dropdown-item" to="/">Completed</Link></li>
                             </ul>
                         </li>
                     </ul>

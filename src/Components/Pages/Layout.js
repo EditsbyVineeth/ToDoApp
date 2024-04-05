@@ -3,6 +3,7 @@ import HomePage from './HomePage'
 import About from './About'
 // import ToDoList from '../CustomComponents/ToDoForm'
 import ToDoForm from '../CustomComponents/ToDoForm'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function Layout() {
   const[ addClick, setAddClick]= useState(false)
@@ -20,24 +21,30 @@ function Layout() {
 
 
   return (
-    <div>
-      { addClick &&
-      <div className='formSection' style={{ zIndex:'999'}}>
-       <ToDoForm handleTaskClose={handleTaskClose} /> 
-       </div>
-       }
-       
-       <div style={addClick ? {backdropFilter: 'blur(10px)', opacity:'50%' , zIndex:'' }: { }}>
+    <Router>
+      <div>
+        { addClick &&
+        <div className='formSection' style={{ zIndex:'999'}}>
+         <ToDoForm handleTaskClose={handleTaskClose} /> 
+         </div>
+         }
+         
+         <div style={addClick ? {backdropFilter: 'blur(10px)', opacity:'50%' , zIndex:'' }: { }}>
+  
+          <Routes>
 
-         <HomePage addClicked={handleAddTask}/>
-          <About/>
-       </div>
-       
-       
-      
+           <Route path='/' element={<HomePage addClicked={handleAddTask}/>} />
+           <Route path='/about' element={<About/>} />
+          
+          </Routes>
+         </div>
+         
+         
         
-      
-    </div>
+          
+        
+      </div>
+    </Router>
   )
 }
 
