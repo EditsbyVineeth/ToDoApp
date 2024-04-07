@@ -33,7 +33,7 @@ function Layout() {
   
           <Routes>
 
-           <Route path='/' element={<HomePage addClicked={handleAddTask}/>} />
+           <Route path='/ToDoApp' element={<HomePage addClicked={handleAddTask}/>} />
            <Route path='/about' element={<About/>} />
           
           </Routes>

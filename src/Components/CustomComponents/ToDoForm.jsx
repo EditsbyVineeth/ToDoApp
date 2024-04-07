@@ -39,7 +39,7 @@ function TodoForm({ addTodo,handleTaskClose }) {
     </div>
   );
 }
-
+  
 const mapDispatchToProps = {
   addTodo,
 };

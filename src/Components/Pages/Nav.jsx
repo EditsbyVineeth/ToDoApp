@@ -24,7 +24,7 @@ function Nav() {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary" ref={navbarRef}>
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Task Flow</a>
+                <Link className="navbar-brand" to="#">Task Flow</Link>
                 <button
                     className="navbar-toggler"
                     type="button"

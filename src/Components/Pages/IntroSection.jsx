@@ -10,7 +10,7 @@ function IntroSection({buttonClicked}) {
         <img className="welcomeImg" 
         src={welcomeImg}
          alt="welcomeImage"></img>
-      </div>
+      </div>n
       <div className="description">
         <h2> Simplify your Tasks, Get Started Today . . . </h2>
       </div>
